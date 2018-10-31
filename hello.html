@@ -20,8 +20,11 @@
     <!-- Color the status bar on mobile devices -->
     <meta name="theme-color" content="#2F3BA2">
 	<title>TITLE</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>-->
     <!--<script language="JavaScript" type="text/javascript" src="index.js"></script>-->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
 </head>
 
 
@@ -35,10 +38,17 @@
             <div id="myDiv">
                 <!--cool shit goes here -->
             </div>
+            <div>
+                <button class="btn btn-primary btn-sm" id="this_button">Click Me!</button>
+            </div>
          </div><!-- /.col -->
     </div><!-- /.row -->
 </div><!-- /.container -->
 
 <script>
     console.log('Hello Zack! Hack away Here!');
+    $('#this_button').click(()={
+        console.log('Hello World!')
+    });
+
 </script>
